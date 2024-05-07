@@ -6,8 +6,8 @@ jobs:
     container: gradle:6-jdk11
     steps:
       - name: Clone down repository
-        uses: actions/checkout@v4       
-      - run: ci/build-app.sh
-      - name: Unit test
         uses: actions/checkout@v4
-      - run: ci/unit-test-app.sh
+      - name: Build application 
+        run: ci/build-app.sh
+      - name: Unit test
+        run: ci/unit-test-app.sh
