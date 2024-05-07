@@ -8,6 +8,3 @@ jobs:
       - name: Clone down repository
         uses: actions/checkout@v4       
       - run: ci/build-app.sh
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
